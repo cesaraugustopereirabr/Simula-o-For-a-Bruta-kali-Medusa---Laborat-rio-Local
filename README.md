@@ -1,4 +1,4 @@
-# Simulação de Ataques de Força Bruta — Laboratório Local (Kali / Medusa / Serviços Vulneráveis)
+# Simulação de Ataques de Força Bruta - Laboratório Local (Kali / Medusa / Serviços Vulneráveis)
 
 > **Aviso ético e legal**: Este repositório/documento foi criado exclusivamente para fins educativos e para uso em **laboratório controlado** (máquinas virtuais que você possui ou possui permissão explícita para testar). **Não execute** ataques, ferramentas ou scripts contra sistemas de terceiros sem autorização expressa. Use redes isoladas (host-only / internal network), snapshots e sempre restaure o ambiente após os testes.
 
@@ -14,10 +14,10 @@
 6. Scripts e códigos (com explicações)
 
    * gerador de wordlists (Python)
-   * `vulnerable_app.py` (Flask) — aplicação de teste vulnerável
-   * `secure_app.py` (Flask) — mesma aplicação com mitigação (rate-limit/lockout/log)
-   * `test_harness.py` — harness de tentativas controladas
-7. Metodologia de teste (passo a passo — laboratório)
+   * `vulnerable_app.py` (Flask) - aplicação de teste vulnerável
+   * `secure_app.py` (Flask) - mesma aplicação com mitigação (rate-limit/lockout/log)
+   * `test_harness.py` - harness de tentativas controladas
+7. Metodologia de teste (passo a passo - laboratório)
 8. Observações sobre Medusa / Kali / ferramentas de linha de comando (visão conceitual segura)
 9. Logs e análise (exemplos)
 10. Recomendações de mitigação
@@ -34,7 +34,7 @@ Documentar e fornecer um arquivo único (README) contendo todo o material necess
 
 ## 2. Arquitetura do laboratório (concepção)
 
-* **VM Atacante:** Kali Linux — papel de análise (conceitual).
+* **VM Atacante:** Kali Linux - papel de análise (conceitual).
 * **VM Target:** Metasploitable 2 / DVWA / aplicações customizadas (Flask) para testes de autenticação.
 * **Rede:** VirtualBox Host-Only ou Internal Network (sem rota para Internet). Snapshots antes de cada etapa.
 * **Ferramentas (exemplos):** Medusa (concept), Hydra (concept), Burp Suite (proxy/inspeção), ferramentas IDS (Suricata/Snort) para observação. *Não incluímos comandos operacionais de ataque contra hosts não autorizados.*
